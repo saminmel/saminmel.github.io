@@ -3,15 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Sam&#39;s caffeine to code converter</title>
+  <title>Angular and typescript tricks - part i - arrow function | Sam&#39;s caffeine to code converter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Sam&#39;s caffeine to code converter">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="In TypeScript, you can define a function in multiple ways.  Traditionally, 123function callMe() &amp;#123;    // do something&amp;#125; Using arrow function123callMe = () =&amp;gt; &amp;#123;    // do something&amp;#125;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Angular and typescript tricks - part i - arrow function">
+<meta property="og:url" content="http://yoursite.com/2017/10/17/Angular-and-typescript-tricks-part-i/index.html">
 <meta property="og:site_name" content="Sam&#39;s caffeine to code converter">
+<meta property="og:description" content="In TypeScript, you can define a function in multiple ways.  Traditionally, 123function callMe() &amp;#123;    // do something&amp;#125; Using arrow function123callMe = () =&amp;gt; &amp;#123;    // do something&amp;#125;">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-10-17T10:52:21.380Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sam&#39;s caffeine to code converter">
+<meta name="twitter:title" content="Angular and typescript tricks - part i - arrow function">
+<meta name="twitter:description" content="In TypeScript, you can define a function in multiple ways.  Traditionally, 123function callMe() &amp;#123;    // do something&amp;#125; Using arrow function123callMe = () =&amp;gt; &amp;#123;    // do something&amp;#125;">
   
     <link rel="alternate" href="/atom.xml" title="Sam&#39;s caffeine to code converter" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Angular-and-typescript-tricks-part-i" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Angular-and-typescript-tricks-part-i" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/10/17/Angular-and-typescript-tricks-part-i/" class="article-date">
   <time datetime="2017-10-17T10:36:06.000Z" itemprop="datePublished">17-10-2017</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/17/Angular-and-typescript-tricks-part-i/">Angular and typescript tricks - part i - arrow function</a>
+    <h1 class="article-title" itemprop="name">
+      Angular and typescript tricks - part i - arrow function
     </h1>
   
 
@@ -105,135 +107,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Regular-Expression-for-HIERARCHYID-in-SQL-Server" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/17/Regular-Expression-for-HIERARCHYID-in-SQL-Server/" class="article-date">
-  <time datetime="2017-10-17T01:42:45.000Z" itemprop="datePublished">17-10-2017</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/17/Regular-Expression-for-HIERARCHYID-in-SQL-Server/">Regular Expression for HIERARCHYID in SQL Server</a>
-    </h1>
+    <a href="/2017/10/17/Regular-Expression-for-HIERARCHYID-in-SQL-Server/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Regular Expression for HIERARCHYID in SQL Server</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>In my previous gig, we had to store trees in sql database. Though I didn’t think it was a good idea at all, I anyway did so.</p>
-<p>I used HIERARCHYID as the node id. HIERARCHYID is a data type in SQL Server from 2008 <a href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/hierarchyid-data-type-method-reference" target="_blank" rel="external">official doco HIERARCHYID Data Type</a>.</p>
-<p>With help of some regex guru on stackoverflow, I come up with the regex for the data type.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/^(\/-?(?!<span class="number">0</span>)\d+(\.(-?(?!<span class="number">0</span>)\d+))*)*\/$/g</div></pre></td></tr></table></figure></p>
-<p>Why do I need it? I only need to validate a hierarchy id by using the functions in HierarchyId class in c#, abd I will have to include the DLL’s, which exist in the sql data type library. Including it is painful sometimes when CI/CD is not controllable by you. </p>
-<p>With the regex, I don’t need to library at all.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/17/Regular-Expression-for-HIERARCHYID-in-SQL-Server/" data-id="cj8vhg0fp0003gwu3woakmofa" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-Clean-up-local-git-repository" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/16/Clean-up-local-git-repository/" class="article-date">
-  <time datetime="2017-10-16T11:18:27.000Z" itemprop="datePublished">16-10-2017</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/16/Clean-up-local-git-repository/">Clean up local git repository</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>You are creating a lot of branches, and a lot of pull requests. Your remote branches are more likely to be deleted once the PR is completed. What about the local ones? They stay. You are having a growing number of local branches that have no coresponding remote ones. </p>
-<p>So, time to do some house-keeping. Use the following git commands to remove your local branches.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git remote prune origin</div><div class="line"> </div><div class="line">$ git branch --merged master | grep -v <span class="string">'^ *master$'</span> | xargs git branch -d</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/16/Clean-up-local-git-repository/" data-id="cj8vhg0eu0001gwu3g2q53rrw" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/09/08/hello-world/" class="article-date">
-  <time datetime="2017-09-08T05:31:01.365Z" itemprop="datePublished">08-09-2017</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/08/hello-world/" data-id="cj8vhg0eu0002gwu31reetcpp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
