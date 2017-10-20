@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sam&#39;s caffeine to code converter</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://saminmel.github.io/"/>
+  <updated>2017-10-19T10:51:50.810Z</updated>
+  <id>https://saminmel.github.io/</id>
+  
+  <author>
+    <name>Sam Siu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Angular and typescript tricks - part ii - destructuring</title>
+    <link href="https://saminmel.github.io/2017/10/19/Angular-and-typescript-tricks-part-ii-destructuring/"/>
+    <id>https://saminmel.github.io/2017/10/19/Angular-and-typescript-tricks-part-ii-destructuring/</id>
+    <published>2017-10-19T10:41:16.000Z</published>
+    <updated>2017-10-19T10:51:50.810Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;TypeScript provides destructuring, a really handy way to access members of a class within a method.&lt;/p&gt;
+&lt;p&gt;So instead of always using
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Angular and typescript tricks - part i - arrow function</title>
+    <link href="https://saminmel.github.io/2017/10/17/Angular-and-typescript-tricks-part-i/"/>
+    <id>https://saminmel.github.io/2017/10/17/Angular-and-typescript-tricks-part-i/</id>
+    <published>2017-10-17T10:36:06.000Z</published>
+    <updated>2017-10-18T10:53:48.908Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;In TypeScript, you can define a function in multiple ways. &lt;/p&gt;
+&lt;p&gt;Traditionally,&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Regular Expression for HIERARCHYID in SQL Server</title>
+    <link href="https://saminmel.github.io/2017/10/17/Regular-Expression-for-HIERARCHYID-in-SQL-Server/"/>
+    <id>https://saminmel.github.io/2017/10/17/Regular-Expression-for-HIERARCHYID-in-SQL-Server/</id>
+    <published>2017-10-17T01:42:45.000Z</published>
+    <updated>2017-10-17T02:00:47.860Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;In my previous gig, we had to store trees in sql database. Though I didn’t think it was a good idea at all, I anyway did so.&lt;/p&gt;
+&lt;p&gt;I
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Clean up local git repository</title>
+    <link href="https://saminmel.github.io/2017/10/16/Clean-up-local-git-repository/"/>
+    <id>https://saminmel.github.io/2017/10/16/Clean-up-local-git-repository/</id>
+    <published>2017-10-16T11:18:27.000Z</published>
+    <updated>2017-10-16T11:25:40.638Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;You are creating a lot of branches, and a lot of pull requests. Your remote branches are more likely to be deleted once the PR is
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://saminmel.github.io/2017/09/08/hello-world/"/>
+    <id>https://saminmel.github.io/2017/09/08/hello-world/</id>
+    <published>2017-09-08T05:31:01.365Z</published>
+    <updated>2017-09-08T05:31:01.366Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

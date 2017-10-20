@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Sam&#39;s caffeine to code converter">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="https://saminmel.github.io/index.html">
 <meta property="og:site_name" content="Sam&#39;s caffeine to code converter">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
@@ -54,13 +54,59 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://saminmel.github.io"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-Angular-and-typescript-tricks-part-ii-destructuring" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/19/Angular-and-typescript-tricks-part-ii-destructuring/" class="article-date">
+  <time datetime="2017-10-19T10:41:16.000Z" itemprop="datePublished">19-10-2017</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/19/Angular-and-typescript-tricks-part-ii-destructuring/">Angular and typescript tricks - part ii - destructuring</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>TypeScript provides destructuring, a really handy way to access members of a class within a method.</p>
+<p>So instead of always using <code>this</code> before the member in a method, you can use destructuring within a method so as to make your code cleaner and simpler.</p>
+<p>We have a class<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">export</span> <span class="keyword">class</span> DestructuringComponent <span class="keyword">implements</span> OnInit &#123;</div><div class="line">  name: <span class="built_in">string</span>;</div><div class="line">  description: <span class="built_in">string</span>;</div><div class="line">...</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Instead of writing,<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">reset = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">  <span class="keyword">this</span>.name = <span class="string">'old product'</span>;</div><div class="line">  <span class="keyword">this</span>.description = <span class="string">'old description'</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>We can write<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">reset = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">  <span class="keyword">let</span> &#123;name, description&#125; = <span class="keyword">this</span>;</div><div class="line"></div><div class="line">  name = <span class="string">'old product'</span>;</div><div class="line">  description = <span class="string">'old description'</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Looks good, right? Hang on. You will find that in Angular, if you bind the member property to html, e.g. you have something like<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; name &#125;&#125;</div></pre></td></tr></table></figure></p>
+<p>when you use destructuring, and the assign a new value to the member property, the new value will not be refreshed in html.</p>
+<p>Simply put, Angular is <strong>watching</strong> <code>this.name</code>. When you use destructuring, you have a new local variable (a new pointer) to <code>this.name</code>. Angular is not watching the new variable, so it will not refresh the html. </p>
+<p>So if you are doing data binding, you may need to <code>this.</code> still.</p>
+<p>Full example can be found in my github repo <a href="https://github.com/saminmel/TsExperiment" target="_blank" rel="external">TypeScript Experiment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://saminmel.github.io/2017/10/19/Angular-and-typescript-tricks-part-ii-destructuring/" data-id="cj8yck1460001hsu3flezm8x9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-Angular-and-typescript-tricks-part-i" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -100,7 +146,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/17/Angular-and-typescript-tricks-part-i/" data-id="cj8vhg0er0000gwu344yo5443" class="article-share-link">Share</a>
+      <a data-url="https://saminmel.github.io/2017/10/17/Angular-and-typescript-tricks-part-i/" data-id="cj8yck1460000hsu3p90j6f56" class="article-share-link">Share</a>
       
       
     </footer>
@@ -141,7 +187,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/17/Regular-Expression-for-HIERARCHYID-in-SQL-Server/" data-id="cj8vhg0fp0003gwu3woakmofa" class="article-share-link">Share</a>
+      <a data-url="https://saminmel.github.io/2017/10/17/Regular-Expression-for-HIERARCHYID-in-SQL-Server/" data-id="cj8yck14l0003hsu35uygls15" class="article-share-link">Share</a>
       
       
     </footer>
@@ -180,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/16/Clean-up-local-git-repository/" data-id="cj8vhg0eu0001gwu3g2q53rrw" class="article-share-link">Share</a>
+      <a data-url="https://saminmel.github.io/2017/10/16/Clean-up-local-git-repository/" data-id="cj8yck14l0004hsu37piidlk3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -225,7 +271,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/08/hello-world/" data-id="cj8vhg0eu0002gwu31reetcpp" class="article-share-link">Share</a>
+      <a data-url="https://saminmel.github.io/2017/09/08/hello-world/" data-id="cj8yck1460002hsu34ni4o0op" class="article-share-link">Share</a>
       
       
     </footer>
@@ -263,6 +309,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/10/19/Angular-and-typescript-tricks-part-ii-destructuring/">Angular and typescript tricks - part ii - destructuring</a>
+          </li>
         
           <li>
             <a href="/2017/10/17/Angular-and-typescript-tricks-part-i/">Angular and typescript tricks - part i - arrow function</a>
